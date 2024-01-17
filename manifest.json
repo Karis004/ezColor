@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "ezColor",
+  "version": "3.0",
+  "description": "i have to write something here",
+
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "inp.html"
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://prebook.hku.icu/*"
+      ]
+    }
+  ]
+}

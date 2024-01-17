@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="div1">
+        <input type="text" id="name" />
+        <input type="button" id="save" value="SAVE" />
+        <input type="button" id="createBtn" value="+" />
+    </div>
+    <div id="createDiv" style="display: none;" >
+        <input type="color" class="co" id="c1" style="position: absolute; top: 90px; left: 40px;display: block;"/>
+        <input type="color" class="co" id="c2" style="position: absolute; top: 90px; left: 80px;"/>
+        <input type="color" class="co" id="c3" style="position: absolute; top: 90px; left: 120px;"/>
+        <input type="color" class="co" id="c4" style="position: absolute; top: 90px; left: 160px;"/>
+        <input type="range" id="slider" min="1" max="4" step="1" value="1">
+        <input type="button" value="OK" id="createOk">
+    </div>
+    <script src="./scripts/recDataJs.js"></script>
+</body>
+
+</html>
