@@ -1,3 +1,10 @@
+chrome.storage.sync.get(['username'], function (items) {
+    if(items.username != null){
+        document.getElementById('name').placeholder = items.username;
+
+    }
+})
+
 var save = document.getElementById('save');
 save.addEventListener('click', function () {
     chrome.storage.sync.set({ username: document.getElementById('name').value }, function () {
@@ -39,11 +46,19 @@ addEventListener('input', function () {
 })
 
 var colorOk = document.getElementById("createOk");
-var colorList = [];
 colorOk.addEventListener('click', function () {
     colorList = [c1.value, c2.value, c3.value, c4.value];
-    chrome.storage.sync.set({ colorList: colorList.slice(0,sliderVal) }, function () {
+    chrome.storage.sync.set({ colorList: colorList.slice(0, sliderVal) }, function () {
     });
 
+})
+
+var info = document.getElementById("info");
+var infoDiv = document.getElementById("div2");
+info.addEventListener("mouseenter", function () {
+    infoDiv.style.display = "block";
+})
+info.addEventListener("mouseleave", function () {
+    infoDiv.style.display = "none";
 })
 

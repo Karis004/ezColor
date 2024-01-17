@@ -2,6 +2,7 @@
     width: 225px;
     height: 60px;
     background-color: #f8dd73;
+
 }
 
 #name[type="text"] {
@@ -108,4 +109,31 @@ input[type="range"]::-webkit-slider-thumb {
 
 #createOk[type="button"]:active {
     background-color: #6e9fb0;
+}
+
+#info{
+    border-radius: 40px;
+    border: 2px solid #6e9fb0;
+    background-color: #9dcfdf;
+    width: 15px;
+    height: 15px;
+    position: fixed;
+    top: 117px;
+    left: 191px;
+}
+
+#wenhao{
+    text-align: center;
+    margin-top: -1px;
+    font-size: 12px;
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+    color: #6e9fb0;
+}
+
+#infoVal{
+    margin: 0;
+    padding-inline: 15px;
+    font-size: 12px;
 }

@@ -10,7 +10,7 @@
 
 <body>
     <div class="div1">
-        <input type="text" id="name" />
+        <input type="text" id="name" placeholder=""/>
         <input type="button" id="save" value="SAVE" />
         <input type="button" id="createBtn" value="+" />
     </div>
@@ -21,6 +21,16 @@
         <input type="color" class="co" id="c4" style="position: absolute; top: 90px; left: 160px;"/>
         <input type="range" id="slider" min="1" max="4" step="1" value="1">
         <input type="button" value="OK" id="createOk">
+        <div id="info" >
+            <p id="wenhao">?</p>
+        </div>
+    </div>
+    <div class="div1" style="display: none;" id="div2">
+        <p id="infoVal">
+            输入'xxxDef'将使用默认配色<br>
+            输入'xxx'将使用自定义颜色<br>
+            输入后需刷新页面
+        </p>
     </div>
     <script src="./scripts/recDataJs.js"></script>
 </body>
